@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+public class Hello{
+    public static void main(String[] args){
+        ArrayList<String> list=new ArrayList<>();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the items:");
+        int item=sc.nextInt();
+        sc.nextLine();
+        for(int i=1;i<=item;i++){
+            System.out.println("Enter item"+i);
+            String food=sc.nextLine();
+            list.add(food);
+        }
+        System.out.println(list);
+        
+        
+    }
+}
